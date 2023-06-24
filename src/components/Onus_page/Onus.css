@@ -1,0 +1,30 @@
+.onus_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.onus_table{
+    margin-left: 14rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    padding-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+ .onus_power{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 138, 98);
+    border-radius: 4px;
+    cursor: pointer;
+    width: 6rem;
+    color: #fff;
+}
+

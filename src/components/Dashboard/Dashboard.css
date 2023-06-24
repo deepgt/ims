@@ -1,0 +1,7 @@
+
+.dashboard_container{
+    display: flex;
+    margin-left: 290px;
+    position: relative;
+    bottom: 80px;
+}

@@ -1,0 +1,21 @@
+.error-popup {
+    /* Your base styles for the error popup */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f44336;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    z-index: 9999;
+    display: none;
+  }
+  
+  .error-popup.show {
+    /* Your styles to show the popup */
+    display: block;
+    animation: fadeOut 5s forwards; /* Apply the fadeOut animation for 5 seconds */
+  }
+  
+  

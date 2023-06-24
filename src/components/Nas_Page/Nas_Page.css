@@ -1,0 +1,113 @@
+.nas_container{
+    display: flex;
+    margin-left: 290px;
+    position: absolute;
+    top: 0px;
+}
+
+
+.form_container{
+    /* width: 100%; */
+    /* background-color: rgb(255, 255, 255); */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 20rem;
+    padding-bottom: 50px;
+}
+
+.nasform{
+    /* margin-left: 16rem; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.nasforrm_input{
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 20px;
+
+}
+
+.nasform_input_row{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.nasform_input_row label {
+    width: 8em;
+    margin-left: 3rem;
+}
+
+.nasform_input_row input{
+    height: 40px;
+    /* width: 100%; */
+    border-radius: 5px;
+    border: 1px solid rgb(197, 197, 197);
+    /* margin-left: 3rem; */
+}
+
+.nasform_input_row .textnerror{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 3rem;
+   }
+   
+   .textnerror > .error{
+       all: unset;
+   }
+
+
+.nasforrm_input label {
+    width: 8em;
+    margin-left: 3rem;
+}
+
+.nasforrm_input input {
+    height: 40px;
+    /* width: 100%; */
+    border-radius: 5px;
+    border: 1px solid rgb(197, 197, 197);
+    outline: none;
+}
+
+.nasforrm_input > .nas_checkbox{
+    width: 20px;
+    position: relative;
+    right: 25px;
+}
+
+.nasform_button{
+    margin-left: 2.8rem;
+}
+
+.textnerror{
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ overflow: hidden;
+}
+
+.textnerror > .error{
+    all: unset;
+    background-color: rgb(255, 108, 108);
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0 10px;
+}
