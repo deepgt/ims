@@ -7,4 +7,5 @@ nav{
    align-items: center;
    color: rgb(3, 3, 3);
    padding: 0px 20px 0px 20px;
+   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }

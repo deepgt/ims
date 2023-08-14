@@ -2,6 +2,38 @@
 .dashboard_container{
     display: flex;
     margin-left: 290px;
+    /* position: relative;
+    bottom: 80px; */
+    flex-direction: column;
+}
+
+.dashboard_card_container{
+    display: flex;
+    gap: 20px;
+}
+
+.dashboard_card{
+    background-color: rgb(23, 158, 255);
+    width: 240px;
+    height: 120px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: #fff;
+}
+
+.dashboard_card > h3, .dashboard_card > h1{
+    margin: 0;
+}
+
+.user_dashboard{
+    width: 200px;
+    height: 200px;
     position: relative;
-    bottom: 80px;
+    left: 1rem;
+    top: 3rem;
 }

@@ -3,6 +3,8 @@ import "./Sidebar.css";
 import { Link } from "react-router-dom";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
+import SpaceDashboardIcon from '@mui/icons-material/SpaceDashboard';
+import AccountBoxIcon from '@mui/icons-material/AccountBox';
 
 const Sidebar = () => {
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
@@ -21,6 +23,7 @@ const Sidebar = () => {
       {/* <div className="sidebar_and_nav_container"> */}
       <div className="sidebar">
         <div className="menu-head">
+         <SpaceDashboardIcon />
           <Link to="/">Dashboard</Link>
         </div>
         <ul className="menu">
@@ -34,9 +37,11 @@ const Sidebar = () => {
           </li>
           <ul className={`submenu ${isUserMenuOpen ? "open" : ""}`}>
             <li className="submenu-item">
+              <AccountBoxIcon />
               <Link to="/userform">User</Link>
             </li>
             <li className="submenu-item">
+              <AccountBoxIcon />
               <Link to="/userdetail">User Detail</Link>
             </li>
           </ul>
@@ -50,9 +55,11 @@ const Sidebar = () => {
           </li>
           <ul className={`submenu ${isCustomerMenuOpen ? "open" : ""}`}>
             <li className="submenu-item">
+              <AccountBoxIcon />
               <Link to="/customerform">Customer</Link>
             </li>
             <li className="submenu-item">
+              <AccountBoxIcon />
               <Link to="/customerdetail">Customer Detail</Link>
             </li>
           </ul>

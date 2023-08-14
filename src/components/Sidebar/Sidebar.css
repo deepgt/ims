@@ -19,7 +19,7 @@
 .sidebar {
    width: 250px;
    background-color: #2c2c2c;
-   padding: 20px 0px;
+   /* padding: 20px 0px; */
    color: white;
    height: 100vh;
    display: flex;
@@ -43,7 +43,7 @@
  .menu {
    list-style-type: none;
    padding: 0;
-   padding-top: 10px;
+   /* padding-top: 10px; */
    padding-bottom: 10px;
    margin: 0;
    width: 100%;
@@ -87,6 +87,7 @@
  .submenu-item {
    padding: 10px 0px 10px 0px;
    /* background-color: aqua; */
+   display: flex;
  }
  
  a {
