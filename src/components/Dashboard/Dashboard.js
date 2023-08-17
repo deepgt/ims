@@ -3,6 +3,8 @@ import './Dashboard.css'
 import { useNavigate } from "react-router-dom";
 import UserPieChart from '../Pi_chart/Pi_chart';
 import {Chart, ArcElement} from 'chart.js'
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+
 Chart.register(ArcElement);
 
 function Dashboard() {
@@ -38,26 +40,52 @@ function Dashboard() {
     <div className='dashboard_container'>
       <h2> Dashboard</h2>
       <div className='dashboard_card_container'>
-        <div className='dashboard_card'>
-          <h1>1120</h1>
+        <div className='dashboard_card_active'>
+          <h1>1000</h1>
           <h3>active user</h3>
         </div>
-        <div className='dashboard_card'>
+        <div className='dashboard_card_inactive'>
+          <h1>1900</h1>
+          <h3>inactive user</h3>
+        </div>
+        <div className='dashboard_card_active'>
           <h1>1120</h1>
           <h3>inactive user</h3>
         </div>
-        <div className='dashboard_card'>
-          <h1>1120</h1>
-          <h3>inactive user</h3>
-        </div>
-        <div className='dashboard_card'>
+        <div className='dashboard_card_active'>
           <h1>1120</h1>
           <h3>inactive user</h3>
         </div>
       </div>
-      <div className='user_dashboard'>
-        <h2>User Distribution</h2>
-        <UserPieChart numberOfUsers={numberOfUsers} />
+
+      <div className='user_stat'>
+        <div className='user_dashboard'>
+          <h2>User Distribution</h2>
+          <div className='pie_container'>
+            <UserPieChart numberOfUsers={numberOfUsers} />
+          </div>
+        </div>
+
+        <div className='side_options_user'>
+          <h1>user info</h1>
+          <div className='userinfo_button'>
+            <KeyboardArrowRightIcon/>
+            for user detail button
+          </div>
+          <div className='userinfo_button'>
+            <KeyboardArrowRightIcon/>
+            for user detail button
+          </div>
+          <div className='userinfo_button'>
+            <KeyboardArrowRightIcon/>
+            for user detail button
+          </div>
+          <div className='userinfo_button'>
+            <KeyboardArrowRightIcon/>
+            for user detail button
+          </div>
+        </div>
+
       </div>
     </div>
 

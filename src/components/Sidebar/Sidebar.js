@@ -22,10 +22,12 @@ const Sidebar = () => {
     <>
       {/* <div className="sidebar_and_nav_container"> */}
       <div className="sidebar">
+        <Link to="/" >
         <div className="menu-head">
-         <SpaceDashboardIcon />
-          <Link to="/">Dashboard</Link>
+          <SpaceDashboardIcon />
+          Dashboard
         </div>
+        </Link>
         <ul className="menu">
           <li className="menu-item">
             <div
@@ -36,14 +38,18 @@ const Sidebar = () => {
             </div>
           </li>
           <ul className={`submenu ${isUserMenuOpen ? "open" : ""}`}>
+            <Link to="/userform">
+              <li className="submenu-item">
+                <AccountBoxIcon />
+                User
+            </li>
+            </Link>
+            <Link to="/userdetail">
             <li className="submenu-item">
               <AccountBoxIcon />
-              <Link to="/userform">User</Link>
+              User Detail
             </li>
-            <li className="submenu-item">
-              <AccountBoxIcon />
-              <Link to="/userdetail">User Detail</Link>
-            </li>
+            </Link>
           </ul>
           <li className="menu-item">
             <div
@@ -54,45 +60,59 @@ const Sidebar = () => {
             </div>
           </li>
           <ul className={`submenu ${isCustomerMenuOpen ? "open" : ""}`}>
+          <Link to="/customerform">
             <li className="submenu-item">
               <AccountBoxIcon />
-              <Link to="/customerform">Customer</Link>
+              Customer
             </li>
-            <li className="submenu-item">
-              <AccountBoxIcon />
-              <Link to="/customerdetail">Customer Detail</Link>
-            </li>
+            </Link>
+            <Link to="/customerdetail">
+              <li className="submenu-item">
+                <AccountBoxIcon />
+                Customer Detail
+              </li>
+            </Link>
           </ul>
+          <Link to="/Nas">
           <li className="menu-item">
             <div className="mitem">
-              <Link to="/Nas">NAS</Link>
+             NAS
               <KeyboardDoubleArrowRightIcon />
             </div>
           </li>
+          </Link>
+          <Link to="/olt">
           <li className="menu-item">
             <div className="mitem">
-              <Link to="/olt">Olt</Link>
+              Olt
               <KeyboardDoubleArrowRightIcon />
             </div>
           </li>
+          </Link>
+          <Link to="/onus">
           <li className="menu-item">
             <div className="mitem">
-              <Link to="/onus">Onus</Link>
+              Onus
               <KeyboardDoubleArrowRightIcon />
             </div>
           </li>
+          </Link>
+          <Link to="/Package">
           <li className="menu-item">
             <div className="mitem">
-              <Link to="/Package">Package</Link>
+              Package
               <KeyboardDoubleArrowRightIcon />
             </div>
           </li>
+          </Link>
+          <Link to="/Service">
           <li className="menu-item">
             <div className="mitem">
-              <Link to="/Service">Service</Link>
+              Service
               <KeyboardDoubleArrowRightIcon />
             </div>
           </li>
+          </Link>
         </ul>
       </div>
     </>
