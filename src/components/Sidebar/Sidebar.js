@@ -5,31 +5,83 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
 import SpaceDashboardIcon from '@mui/icons-material/SpaceDashboard';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
+import SidebarData from "./SidebarData";
+import DnsIcon from '@mui/icons-material/Dns';
 
 const Sidebar = () => {
-  const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
-  const [isCustomerMenuOpen, setIsCustomerMenuOpen] = useState(false);
+  const [isDashBoardOpen, setIsDashBoardOpen] = useState(false);
 
-  const toggleUserMenu = () => {
-    setIsUserMenuOpen(!isUserMenuOpen);
+  const [openSubmenus, setOpenSubmenus] = useState({}); // State to track open submenus
+
+
+  const toggleSubmenu = (index) => {
+    setOpenSubmenus((prevOpenSubmenus) => ({
+      ...prevOpenSubmenus,
+      [index]: !prevOpenSubmenus[index],
+    }));
   };
 
-  const toggleCustomerMenu = () => {
-    setIsCustomerMenuOpen(!isCustomerMenuOpen);
-  };
+  const renderSubMenu = (subNav, parentIndex) => (
+    <ul className="sub-menu-container">
+    {subNav.map((item, index) => (
+      <li key={index} className="sub-menu">
+        <div className="sub-menu-item" onClick={() => toggleSubmenu(parentIndex + '-' + index)}>
+          {item.icon}
+          <h3>{item.title}</h3>
+        </div>
+        {openSubmenus[parentIndex + '-' + index] && item.subNav && renderSubMenu(item.subNav, parentIndex + '-' + index)}
+      </li>
+    ))}
+  </ul>
+  );
+
 
   return (
     <>
       {/* <div className="sidebar_and_nav_container"> */}
       <div className="sidebar">
-        <Link to="/" >
         <div className="menu-head">
-          <SpaceDashboardIcon />
-          Dashboard
+          <Link to="/" className="menu-container">
+            <DnsIcon />
+            <h3>IMS</h3>
+          </Link>
         </div>
-        </Link>
         <ul className="menu">
-          <li className="menu-item">
+          {SidebarData.map((item, index) => (
+            <li key={index} className="mitem">
+              <div className="menu-item" onClick={() => toggleSubmenu(index)}>
+                <div className="menu-item-content">
+                {item.icon}
+                {item.title}
+                </div>
+                {item.subNav && <KeyboardArrowDownIcon />}
+              </div>
+              {openSubmenus[index] && item.subNav && renderSubMenu(item.subNav, index)}
+            </li>
+          ))}
+
+
+{/*         
+        {SidebarData.map((item, index) => (                 
+          <li className="menu-item" key={index}>
+            <div
+              className={`mitem ${isDashBoardOpen ? "open" : ""}`}
+              onClick={toggleDashBoardMenu}>
+               <span>{item.title}</span>
+              {item.subNav && renderSubMenu(item.subNav)}
+            </div>
+          </li>
+           ))} */}
+          {/* <ul className={`submenu ${isDashBoardOpen ? "open" : ""}`}>
+            <Link to="/userform">
+                {subNav.map((item, index) => (             
+                <li className="submenu-item" key={index}>
+                  <span>{item.title}</span>
+                </li>
+                  ))}
+            </Link> */}
+          </ul>
+          {/* <li className="menu-item">
             <div
               className={`mitem ${isUserMenuOpen ? "open" : ""}`}
               onClick={toggleUserMenu}>
@@ -112,8 +164,7 @@ const Sidebar = () => {
               <KeyboardDoubleArrowRightIcon />
             </div>
           </li>
-          </Link>
-        </ul>
+          </Link>*/}
       </div>
     </>
   );
