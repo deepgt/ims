@@ -30,12 +30,12 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-table{
+.olt_table > table{
     border: 1px solid gray;
 }
 
-td,th{
-    height: 4em;
+.olt_table >td, .olt_table>th{
+    height: 1em;
     border: 1px solid rgb(177, 177, 177);
 }
 

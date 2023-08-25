@@ -45,7 +45,7 @@ function User_detail() {
   return (
     <>
     <div className='nas_container'>
-      <h1>Users</h1>
+      <h1>Users details</h1>
     </div>
 
     {isOpen && (

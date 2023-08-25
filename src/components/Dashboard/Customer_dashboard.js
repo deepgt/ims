@@ -1,5 +1,5 @@
 import React,{useEffect, useState} from 'react'
-import './Dashboard.css'
+import './Customer_dashboard.css'
 import { useNavigate } from "react-router-dom";
 import UserPieChart from '../Pi_chart/Pi_chart';
 import {Chart, ArcElement} from 'chart.js'
@@ -7,7 +7,7 @@ import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
 Chart.register(ArcElement);
 
-function Dashboard() {
+function Customer_dashboard() {
   
   const nav = useNavigate();
   const [numberOfUsers, setNumberOfUsers] = useState(0);
@@ -29,16 +29,8 @@ function Dashboard() {
 
   return (
     <>
-    {/* <nav>
-      <h1>ims</h1>
-
-      <h1>Dashboard</h1>
-    
-      <Button label="logout" onClick={handlelogout}/>
-
-    </nav> */}
     <div className='dashboard_container'>
-      <h2> Dashboard</h2>
+      <h2>Customer Dashboard</h2>
       <div className='dashboard_card_container'>
         <div className='dashboard_card_active'>
           <h1>1000</h1>
@@ -93,4 +85,4 @@ function Dashboard() {
   )
 }
 
-export default Dashboard
+export default Customer_dashboard

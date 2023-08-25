@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Dashboard from './components/Dashboard/Dashboard';
+import Dashboard from './components/Dashboard/Customer_dashboard';
 import Login from './components/Login/Login';
 import NasPage from './components/Nas_Page/Nas_Page'
 import SidebarLayout from './components/Sidebar/SidebarLayout';
@@ -17,6 +17,10 @@ import Customerdetail from './components/Customer_detail_page/Customer_detail';
 import Userupdateform from './components/Userupdateform/Userupdateform';
 import Packageform from './components/Package_form/Package_form';
 import Customerupdateform from './components/Customerupdateform/Customerupdateform';
+import Financedashboard from './components/Dashboard/Finance_dashboard';
+import Customerdashboard from './components/Dashboard/Customer_dashboard';
+import Resellerdashboard from './components/Dashboard/Reseller_dashboard';
+import Ispdashboard from './components/Dashboard/Isp_dashboard';
 
 function App() {
 
@@ -26,20 +30,24 @@ function App() {
         <Routes>
         <Route element={<SidebarLayout/>}>
             <Route path="/" element={<Dashboard />} />
-            <Route path="/nas" element={<NasPage />} />
-            <Route path="/olt" element={<Olt />} />
+            <Route path="/dashboard/customer" element={<Customerdashboard />} />
+            <Route path="/dashboard/finance" element={<Financedashboard />} />
+            <Route path="/dashboard/reseller" element={<Resellerdashboard />} />
+            <Route path="/dashboard/isp" element={<Ispdashboard />} />
+            <Route path="networking/nas" element={<NasPage />} />
+            <Route path="networking/olt" element={<Olt />} />
             <Route path="/oltform" element={<Oltform />} />
-            <Route path="/onus" element={<Onus />} />
-            <Route path="/package" element={<Package />} />
+            <Route path="networking/onus" element={<Onus />} />
+            <Route path="/package/allpackage" element={<Package />} />
             <Route path="/packageform" element={<Packageform />} />
             <Route path="/service" element={<Service />} />
             <Route path="/serviceform" element={<Serviceform />} />
             <Route path="/userform" element={<Userform />} />
             <Route path="/userupdateform/:id" element={<Userupdateform />} />
-            <Route path="/userdetail" element={<Userdetail />} />
-            <Route path="/customerform" element={<Customerform />} />
-            <Route path="/customerdetail" element={<Customerdetail />} />
-            <Route path="/customerupdateform/:id" element={<Customerupdateform />} />
+            <Route path="/system/userdetail" element={<Userdetail />} />
+            <Route path="customer/customerform" element={<Customerform />} />
+            <Route path="customer/customerdetail" element={<Customerdetail />} />
+            <Route path="customer/customerupdateform/:id" element={<Customerupdateform />} />
         </Route>
             <Route path="/login" element={<Login />} />
         </Routes>

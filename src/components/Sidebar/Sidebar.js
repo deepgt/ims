@@ -21,9 +21,10 @@ const Sidebar = () => {
     }));
   };
 
-  const renderSubMenu = (subNav, parentIndex) => (
+  const renderSubMenu = (path,subNav, parentIndex) => (
     <ul className="sub-menu-container">
     {subNav.map((item, index) => (
+      <Link to={path+item.path}>
       <li key={index} className="sub-menu">
         <div className="sub-menu-item" onClick={() => toggleSubmenu(parentIndex + '-' + index)}>
           {item.icon}
@@ -31,6 +32,7 @@ const Sidebar = () => {
         </div>
         {openSubmenus[parentIndex + '-' + index] && item.subNav && renderSubMenu(item.subNav, parentIndex + '-' + index)}
       </li>
+      </Link>
     ))}
   </ul>
   );
@@ -56,7 +58,7 @@ const Sidebar = () => {
                 </div>
                 {item.subNav && <KeyboardArrowDownIcon />}
               </div>
-              {openSubmenus[index] && item.subNav && renderSubMenu(item.subNav, index)}
+              {openSubmenus[index] && item.subNav && renderSubMenu(item.path,item.subNav, index)}
             </li>
           ))}
 

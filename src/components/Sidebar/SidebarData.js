@@ -29,44 +29,44 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
  const SidebarData = [
             {
                 title: 'Dashboard',
-                path: '/user',
+                path: '/dashboard',
                 icon: <AvTimerIcon />,
                 subNav: [
                     {
                         title: 'Custom dashboard',
-                        path: '/userr',
+                        path: '/customer',
                         icon: <AvTimerIcon />,
                     },
                     {
                         title: 'Finance dashboard',
-                        path: '/userr',
+                        path: '/finance',
                         icon: <LocalAtmIcon />,
                     },
                     {
                         title: 'Reseller Customer',
-                        path: './user',
+                        path: '/reseller',
                         icon: <AvTimerIcon />,
                     },
                     {
                         title: 'Isp Customer',
-                        path: './user',
+                        path: '/isp',
                         icon: <AvTimerIcon />,
                     }
                 ]
             },
             {
                 title: 'System',
-                path: '/user',
+                path: '/system',
                 icon: <DehazeIcon />,
                 subNav: [
                     {
                         title: 'Admin User',
-                        path: '/userr',
+                        path: '/userdetail',
                         icon: <HourglassEmptyIcon />,
                     },
                     {
                         title: 'Roles',
-                        path: '/userr',
+                        path: '/user',
                         icon: <HourglassEmptyIcon />,
                     },
                     {
@@ -118,12 +118,12 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
                 subNav: [
                     {
                         title: 'isp ',
-                        path: '/userr',
+                        path: '/user',
                         icon: <SupervisorAccountIcon />,
                     },
                     {
                         title: 'Resellers',
-                        path: '/userr',
+                        path: '/user',
                         icon: <AlignHorizontalLeftIcon />,
                     },
                     {
@@ -140,78 +140,78 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
             },
             {
                 title: 'Customer',
-                path: '/user',
+                path: '/customer',
                 icon: <SupervisorAccountIcon />,
                 subNav: [
                     {
                         title: 'View in Map',
-                        path: '/userr',
+                        path: '/customerdetail',
                         icon: <MapIcon />,
                     },
                     {
                         title: 'All Customer',
-                        path: '/userr',
+                        path: '/customerdetail',
                         icon: <SupervisorAccountIcon />,
                     },
                     {
                         title: 'Online Customer',
-                        path: './user',
+                        path: '/customerdetail',
                         icon: <SnowboardingIcon />,
                     },
                     {
                         title: 'Expired Customer',
-                        path: './user',
+                        path: '/customerdetail',
                         icon: <HourglassEmptyIcon />,
                     },
                     {
                         title: 'Without MAP',
-                        path: './user',
+                        path: '/customerdetail',
                         icon: <HourglassEmptyIcon />,
                     },
                     {
                         title: 'Create Customer',
-                        path: './user',
+                        path: '/customerform',
                         icon: <PersonAddAltIcon />,
                     },
                     {
                         title: 'Active Customer',
-                        path: './user',
+                        path: '/customerdetail',
                         icon: <PersonIcon />,
                     },
                     {
                         title: 'Expiring Customer',
-                        path: './user',
+                        path: '/customerdetail',
                         icon: <HourglassEmptyIcon />,
                     }
                 ]
             },
             {
                 title: 'Profile',
-                path: './user',
+                path: '/user',
                 icon: <SupervisorAccountIcon />,
                 subNav: [
                     {
                         title: 'All Profile ',
-                        path: '/userr',
+                        path: '/user',
                         icon: <SupervisorAccountIcon />,
                     }
                 ]
             },
             {
                 title: 'Package',
-                path: './user',
+                path: './package',
                 icon: <SupervisorAccountIcon />,
                 subNav: [
                     {
                         title: 'All Packages ',
-                        path: '/userr',
+                        path: '/allpackage',
                         icon: <SupervisorAccountIcon />,
                     }
                 ]
             },
             {
                 title: 'Networking',
-                path: '/user',
+                path: '/networking',
                 icon: <AddLinkIcon />,
                 subNav: [
                     {
@@ -221,47 +221,47 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
                     },
                     {
                         title: 'OLT',
-                        path: '/userr',
+                        path: '/olt',
                         icon: <AddLinkIcon />,
                     },
                     {
                         title: 'Other Device',
-                        path: './user',
+                        path: '/user',
                         icon: <AddLinkIcon />,
                     },
                     {
                         title: 'Radius Logs',
-                        path: './user',
+                        path: '/user',
                         icon: <AddLinkIcon />,
                     },
                     {
                         title: 'Pods',
-                        path: './user',
+                        path: '/user',
                         icon: <AddLinkIcon />,
                     },
                     {
                         title: 'FTTH Network',
-                        path: './user',
+                        path: '/user',
                         icon: <AddLinkIcon />,
                     },
                     {
                         title: 'Mikrotik Management',
-                        path: './user',
+                        path: '/user',
                         icon: <Brightness5Icon />,
                     },
                     {
                         title: 'High Power Onus',
-                        path: './user',
+                        path: '/onus',
                         icon: <AddLinkIcon />,
                     },
                     {
                         title: 'Latency Graph',
-                        path: './user',
+                        path: '/user',
                         icon: <Brightness5Icon />,
                     },
                     {
                         title: 'Ip Management',
-                        path: './user',
+                        path: '/user',
                         icon: <AlignHorizontalLeftIcon />,
                     }
                 ]
@@ -278,7 +278,7 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
                     },
                     {
                         title: 'All Payments',
-                        path: '/userr',
+                        path: '/user',
                         icon: <AttachMoneyIcon />,
                     },
                     {
@@ -330,12 +330,12 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
                 subNav: [
                     {
                         title: 'Tickets ',
-                        path: '/userr',
+                        path: '/user',
                         icon: <SupervisorAccountIcon />,
                     },
                     {
                         title: 'Teams ',
-                        path: '/userr',
+                        path: '/user',
                         icon: <SupervisorAccountIcon />,
                     }
                 ]
@@ -352,12 +352,12 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
                 subNav: [
                     {
                         title: 'All Leads ',
-                        path: '/userr',
+                        path: '/user',
                         icon: <ShoppingCartIcon />,
                     },
                     {
                         title: 'Create Lead',
-                        path: '/userr',
+                        path: '/user',
                         icon: <AddShoppingCartIcon />,
                     }
                 ]

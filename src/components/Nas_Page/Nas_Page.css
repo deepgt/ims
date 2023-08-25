@@ -5,6 +5,10 @@
     top: 0px; */
 }
 
+.nas_container > h1{
+    font-weight: 400;
+}
+
 
 .form_container{
     /* width: 100%; */
