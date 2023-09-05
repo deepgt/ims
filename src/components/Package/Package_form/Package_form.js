@@ -1,6 +1,6 @@
 import React, { useState }  from 'react'
-import Button from '../Button/Button';
-import Dropdown from '../Dropdown/Dropdown';
+import Button from '../../Button/Button';
+import Dropdown from '../../Dropdown/Dropdown';
 import './Package_form.css'
 
 function Package_form() {

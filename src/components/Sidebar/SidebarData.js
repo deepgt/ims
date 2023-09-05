@@ -1,8 +1,4 @@
 
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
-import SpaceDashboardIcon from '@mui/icons-material/SpaceDashboard';
-import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import AvTimerIcon from '@mui/icons-material/AvTimer';
 import DehazeIcon from '@mui/icons-material/Dehaze';
 import LocalAtmIcon from '@mui/icons-material/LocalAtm';
@@ -66,76 +62,76 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
                     },
                     {
                         title: 'Roles',
-                        path: '/user',
+                        path: '/roles',
                         icon: <HourglassEmptyIcon />,
                     },
                     {
                         title: 'Permissions',
-                        path: './user',
+                        path: '/permission',
                         icon: <HourglassEmptyIcon />,
                     },
                     {
                         title: 'Cron Logs',
-                        path: './user',
+                        path: '/cronlog',
                         icon: <HourglassEmptyIcon />,
                     },
                     {
                         title: 'Issues',
-                        path: './user',
+                        path: '/issues',
                         icon: <HourglassEmptyIcon />,
                     },
                     {
                         title: 'SMS',
-                        path: './user',
+                        path: '/sms',
                         icon: <HourglassEmptyIcon />,
                     },
                     {
                         title: 'Import Customers',
-                        path: './user',
+                        path: '/importcustomer',
                         icon: <Brightness5Icon />,
                     },
                     {
                         title: 'Call-Logs',
-                        path: './user',
+                        path: '/calllogs',
                         icon: <CallIcon />,
                     },
                     {
                         title: 'Approvals',
-                        path: './user',
+                        path: '/approvals',
                         icon: <AddLinkIcon />,
                     },
                     {
                         title: 'Notice',
-                        path: './user',
+                        path: '/notice',
                         icon: <Brightness5Icon />,
                     }
                 ]
             },
             {
                 title: 'Organization',
-                path: './user',
+                path: '/organization',
                 icon: <DehazeIcon />,
                 subNav: [
                     {
                         title: 'isp ',
-                        path: '/user',
+                        path: '/isp',
                         icon: <SupervisorAccountIcon />,
                     },
                     {
                         title: 'Resellers',
-                        path: '/user',
+                        path: '/reseller',
                         icon: <AlignHorizontalLeftIcon />,
                     },
                     {
                         title: 'Branches',
-                        path: './user',
+                        path: '/branches',
                         icon: <AlignHorizontalLeftIcon />,
                     }
                 ]
             },
             {
                 title: 'Location',
-                path: './user',
+                path: '/location',
                 icon: <MapIcon />,
             },
             {
@@ -187,19 +183,19 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
             },
             {
                 title: 'Profile',
-                path: '/user',
+                path: '/profile',
                 icon: <SupervisorAccountIcon />,
                 subNav: [
                     {
                         title: 'All Profile ',
-                        path: '/user',
+                        path: '/allprofile',
                         icon: <SupervisorAccountIcon />,
                     }
                 ]
             },
             {
                 title: 'Package',
-                path: './package',
+                path: '/package',
                 icon: <SupervisorAccountIcon />,
                 subNav: [
                     {
@@ -226,27 +222,27 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
                     },
                     {
                         title: 'Other Device',
-                        path: '/user',
+                        path: '/device',
                         icon: <AddLinkIcon />,
                     },
                     {
                         title: 'Radius Logs',
-                        path: '/user',
+                        path: '/radiuslog',
                         icon: <AddLinkIcon />,
                     },
                     {
                         title: 'Pods',
-                        path: '/user',
+                        path: '/pods',
                         icon: <AddLinkIcon />,
                     },
                     {
                         title: 'FTTH Network',
-                        path: '/user',
+                        path: '/ftthnetwork',
                         icon: <AddLinkIcon />,
                     },
                     {
                         title: 'Mikrotik Management',
-                        path: '/user',
+                        path: '/mikrotik',
                         icon: <Brightness5Icon />,
                     },
                     {
@@ -256,130 +252,130 @@ import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
                     },
                     {
                         title: 'Latency Graph',
-                        path: '/user',
+                        path: '/latency',
                         icon: <Brightness5Icon />,
                     },
                     {
                         title: 'Ip Management',
-                        path: '/user',
+                        path: '/ip',
                         icon: <AlignHorizontalLeftIcon />,
                     }
                 ]
             },
             {
                 title: 'Finance',
-                path: '/user',
+                path: '/finance',
                 icon: <AttachMoneyIcon />,
                 subNav: [
                     {
                         title: 'Point Of Sale',
-                        path: '/Nas',
+                        path: '/pointofsale',
                         icon: <AttachMoneyIcon />,
                     },
                     {
                         title: 'All Payments',
-                        path: '/user',
+                        path: '/allpayment',
                         icon: <AttachMoneyIcon />,
                     },
                     {
                         title: 'Collection Entry',
-                        path: './user',
+                        path: '/collectionentry',
                         icon: <AttachMoneyIcon />,
                     },
                     {
                         title: 'Paid Invoice',
-                        path: './user',
+                        path: '/paidinvoice',
                         icon: <AttachMoneyIcon />,
                     },
                     {
                         title: 'Unpaid Invoice',
-                        path: './user',
+                        path: '/unpaidinvoice',
                         icon: <AttachMoneyIcon />,
                     },
                     {
                         title: 'All Invoice',
-                        path: './user',
+                        path: '/allinvoice',
                         icon: <AttachMoneyIcon />,
                     },
                     {
                         title: 'Reseller Transcations',
-                        path: './user',
+                        path: '/resellertranscations',
                         icon: <AttachMoneyIcon />,
                     },
                     {
                         title: 'Rigo API',
-                        path: './user',
+                        path: '/rigoapi',
                         icon: <AccountTreeIcon />,
                     },
                     {
                         title: 'Recharges',
-                        path: './user',
+                        path: '/recharges',
                         icon: <AttachMoneyIcon />,
                     },
                     {
                         title: 'Schedules',
-                        path: './user',
+                        path: '/schedules',
                         icon: <AttachMoneyIcon />,
                     }
                 ]
             },
             {
                 title: 'Support System',
-                path: './user',
+                path: './supportsystem',
                 icon: <SupervisorAccountIcon />,
                 subNav: [
                     {
                         title: 'Tickets ',
-                        path: '/user',
+                        path: '/tickets',
                         icon: <SupervisorAccountIcon />,
                     },
                     {
                         title: 'Teams ',
-                        path: '/user',
+                        path: '/teams',
                         icon: <SupervisorAccountIcon />,
                     }
                 ]
             },
             {
                 title: 'Monitoring System',
-                path: './user',
+                path: '/monitoring',
                 icon: <RemoveRedEyeIcon />,
             },
             {
                 title: 'Leads',
-                path: './user',
+                path: '/leads',
                 icon: <ShoppingCartIcon />,
                 subNav: [
                     {
                         title: 'All Leads ',
-                        path: '/user',
+                        path: '/allleads',
                         icon: <ShoppingCartIcon />,
                     },
                     {
                         title: 'Create Lead',
-                        path: '/user',
+                        path: '/createlead',
                         icon: <AddShoppingCartIcon />,
                     }
                 ]
             },
             {
                 title: 'ACS',
-                path: './user',
+                path: './acs',
                 icon: <MonitorHeartIcon />,
             },
             {
                 title: 'Hotspot Manager',
-                path: './user',
+                path: './hotspot',
                 icon: <WifiIcon />,
             },
             {
                 title: 'TV Manager',
-                path: './user',
+                path: './tv',
                 icon: <CreditCardIcon />,
             },
             {
                 title: 'Mapping',
-                path: './user',
+                path: './mapping',
                 icon: <AccountTreeIcon />,
             },
 

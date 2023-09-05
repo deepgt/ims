@@ -1,9 +1,9 @@
 import React,{ useState, useEffect } from 'react'
-import './Package.css'
-import Button from '../Button/Button';
+import './Olt.css'
+import Button from '../../Button/Button';
 import { useNavigate } from 'react-router-dom';
 
-function Package() {
+function Olt() {
 
     const navigate = useNavigate();
     const [tableData, setTableData] = useState([]);
@@ -18,27 +18,34 @@ function Package() {
 
     const handleoltadd = () => {
         // Handle button click logic here
-        navigate('/packageform');
+        navigate('/oltform');
     };
   return (
+
     <>
     <div className='nas_container'>
-      <h1>Package</h1>
-    </div>
+           <h1>Olt</h1>
+        </div>
 
     <div className='olt_container'>
+        {/* <div className='olt_head'>
+            <h2>OLT</h2>
+        </div> */}
+
         <div className='olt_table'>
             <Button  label="Add" onClick={handleoltadd} />
             <table>
             <thead>
                 <tr>
-                <th>Package Type</th>
-                <th>Package Name</th>
-                <th>Intl Up(Mbps)</th>
-                <th>Local Up(Mbps)</th>
-                <th>Local down(Mbps)</th>
+                <th>Type</th>
                 <th>Organization</th>
+                <th>Branch</th>
+                <th>OLT Name</th>
+                <th>IP Address</th>
+                <th>Serial No.</th>
                 <th>Ports</th>
+                <th>Community String</th>
+                <th>Description</th>
                 <th>Status</th>
                 <th>Active</th>
                 </tr>
@@ -52,10 +59,13 @@ function Package() {
                     <td>{row.OLTName}</td>
                     <td>{row.IPAddress}</td>
                     <td>{row.Ports}</td>
+                    <td>{row.CommunityString}</td>
                     <td>{row.Description}</td>
                     <td>
-                        <div className='status_td_service'> 
-                           Active
+                        <div className='status_td'> 
+                            <div className='statusvalue_td'>SNMP</div>
+                            <div className='statusvalue_td'>SSH</div>
+                            <div className='statusvalue_td'> Telnet</div>
                         </div>
                     </td>
                     <td>
@@ -65,6 +75,7 @@ function Package() {
                             <div className='statusvalue'><img src='../assets/images/sync.png' alt='img'/></div>
                         </div>
                     </td>
+                    <td></td>
                 </tr>
                 ))}
             </tbody>
@@ -76,4 +87,4 @@ function Package() {
   )
 }
 
-export default Package
+export default Olt

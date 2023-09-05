@@ -1,6 +1,6 @@
 import React, { useState }  from 'react'
-import Button from '../Button/Button';
-import Dropdown from '../Dropdown/Dropdown';
+import Button from '../../Button/Button';
+import Dropdown from '../../Dropdown/Dropdown';
 import './Nas_Page.css'
 
 function Nas_Page() {

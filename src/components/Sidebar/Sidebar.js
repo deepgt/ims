@@ -51,12 +51,14 @@ const Sidebar = () => {
         <ul className="menu">
           {SidebarData.map((item, index) => (
             <li key={index} className="mitem">
+              {!item.subNav && <Link to={item.path} className="link_without_subnav"/>}
               <div className="menu-item" onClick={() => toggleSubmenu(index)}>
                 <div className="menu-item-content">
                 {item.icon}
                 {item.title}
                 </div>
                 {item.subNav && <KeyboardArrowDownIcon />}
+               
               </div>
               {openSubmenus[index] && item.subNav && renderSubMenu(item.path,item.subNav, index)}
             </li>
